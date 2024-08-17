@@ -1,0 +1,271 @@
+
+/* Additional styling for the body */
+h1 {
+    font-family: 'Georgia', serif; /* Serif font style for elegance */
+    font-size: 1.2em; /* Slightly larger font size */
+    font-style: italic; /* Italicize the text */
+    color: hwb(0 1% 95%); /* Lighter grey color */
+    text-align: left; /* Center align the text */
+    margin-top: 10px; /* Space above the text */
+    margin-bottom: 20px; 
+}
+body{
+    background-color: hwb(240 94% 3%);
+    font-family: 'Arial', sans-serif; /* Font style for the body */
+
+}
+/* Styling for the bar */
+/* Styling for the navigation bar */
+/* Styling for the navigation bar */
+.navbar {
+    background-color: rgb(242, 34, 7); /* Dark background color for the navbar */
+    padding: 3px; /* Padding around the navbar */
+}
+
+.nav-list {
+    list-style:none; /* Remove bullet points from list */
+    margin: 15px; /* Remove margin */
+    padding: 0px; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content:flex-end; /* Align items to the right */
+}
+
+.nav-list li {
+    margin-left: 20px; /* Space between the items */
+}
+
+.nav-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 1em; /* Font size */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and font size */
+    cursor: pointer; /* Change cursor to a finger pointer */
+}
+
+.nav-list a:hover {
+    color: hsl(48, 62%, 94%); /* Change color on hover */
+    font-size: 1.1em; /* Increase font size on hover */
+    font-weight: bold; /* Make text bold on hover */
+    text-decoration:unset; /* Underline text on hover */
+}
+
+/* Styling for the About Me section */
+.about-section {
+    padding: 20px;
+    background-color: hsl(0, 4%, 9%); /* Light grey background */
+    text-align: center; /* Center align text */
+}
+
+.profile-container {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Center align items horizontally */
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.profile-image {
+    border-radius: 50%; /* Make the image round */
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the circle */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.profile-info {
+    max-width: 600px; /* Limit width of the profile info */
+}
+
+.profile-name {
+    font-family: 'Arial', sans-serif; /* Font style for the name */
+    font-size: 2em; /* Font size for the name */
+    color: #333; /* Dark grey color for the name */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.profile-summary {
+    font-family: 'Arial', sans-serif; /* Font style for the summary */
+    font-size: 1.2em; /* Font size for the summary */
+    color: hwb(132 96% 2%); /* Medium grey color for the summary */
+    line-height: 1.6; /* Line height for better readability */
+}
+/* Styling for the Skills section */
+/* Styling for the Skills section */
+.skills {
+    display: flex; /* Disposer les compétences en ligne */
+    flex-wrap: wrap; /* Permettre l'habillage à la ligne suivante si nécessaire */
+    justify-content: space-around; /* Espacer uniformément les éléments */
+    padding: 20px;
+    background-color: hsl(62, 94%, 50%);
+    border-radius: 8px;
+   
+}
+
+.skill-item {
+    display: flex; /* Aligner le logo et le texte côte à côte */
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.skill-item:hover {
+    background-color: rgb(252, 5, 5);
+
+}
+
+.skill-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.skill-text {
+    font-size: 1.2em;
+    color: #111110;
+}
+.hidden {
+    display: none;
+}
+/* Style général pour le bouton "Skills" */
+#skills-link {
+    color: #fff; /* Couleur du texte du bouton */
+    text-decoration: none; /* Supprimer la décoration du texte */
+    padding: 10px 15px; /* Espacement autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    font-family: Arial, sans-serif; /* Police du texte */
+    font-size: 16px; /* Taille du texte */
+}
+
+/* Changer la couleur de fond au survol */
+#skills-link {
+    text-shadow: none; /* Supprime l'ombre du texte */
+}
+
+
+/* Changer la couleur de fond lorsqu'il est actif */
+/* Styles de base pour les images des compétences */
+
+/* Classe d'animation */
+.animate {
+    transform: translateY(-20px); /* Déplace l'image vers le haut */
+}
+/* Styles pour les projets */
+.project-item {
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.project-logo {
+    width: 200px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.project-info {
+    flex: 1;
+
+}
+
+.project-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    margin: 0 0 10px;
+    
+}
+
+.project-link {
+    color: #1394e4;
+    text-decoration: none;
+    font-size: medium;
+    justify-self: end; 
+    
+    
+}
+
+.project-link:hover {
+  text-decoration: unset;
+}
+.back-to-top {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+p{
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-weight: 600;
+    color: hsl(180, 9%, 2%);
+    cursor: auto;
+}
+.home {
+    width: 24px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between icon and text */
+    list-style: none; /* Remove bullet points from list */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content:flex-end; /* Align items to the right */
+    
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 9px;
+}
+
+label {
+    margin-top: 1em;
+    display: block;
+}
+
+input, textarea {
+    border: 2px solid hsl(243, 74%, 64%);
+    border-radius: 4px;
+    padding: 0.5em;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.7em;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+h3{
+    color:red;
+    font-weight: 200 ;
+    font-style: italic;
+    font-size: larger;
+}
+
+
+
+

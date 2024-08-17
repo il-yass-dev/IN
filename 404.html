@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+    <head>   
+    <link rel="stylesheet" href="cssport.css">
+    <title>mon portfolio </title>
+    <style>
+        /* Créez les keyframes pour animer l'image */
+        @keyframes moveRight {
+            from { transform: translateX(0); }
+            to { transform: translateX(-20px); }
+        }
+
+        /* Appliquez l'animation à l'image */
+        .moving-image {
+            width: 100px;
+            animation: moveRight 5s infinite alternate;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1>ILIYASS OUAFI</h1>
+                <h1>📧iliyassouafi@gmail.com</h1>
+                <h1>📞0691830011</h1>
+                <ul class="nav-list">
+                    <li><a href="#home"id="about">About Me</a></li>
+                    <li><a href="#skills" id="skills-link"  onclick="document.getElementById('pp').style.display='block'" >Skills</a></li>
+                    <li><a href="#Projects"id="Projects-link"onclick="document.getElementById('LL').style.display='block'">Projects</a></li>
+                    <li><a href="#Recommendations"onclick="document.getElementById('HH').style.display='block'">Recommendations</a></li>
+    
+                </ul>
+            </nav>
+        </header>
+        <section id="about" class="about-section">
+            <div class="profile-container"class="skills-container hidden">
+                <img src="il.png" alt="Profile Image" class="profile-image">
+                <div class="profile-info">
+                    <h2 class="profile-name" style="color:red"  > Hi, I'm ILIYASS OUAFI!👋
+                    </h2>
+                    <p class="profile-summary" style="stop-color: bisque;">
+                        As a passionate web development enthusiast in my first year, and a dedicated AI student, I'm fully committed to honing my skills. I work hard and strive to push my limits, aiming for excellence in every project I undertake.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="pp" class="skills-section" style="display:none ;" >
+            <h2>Skills</h2>
+            <div class="skills-container"class=>
+                <div class="skill-item">
+                    <img src="HTML.JPG" alt="HTML Logo" class="skill-logo">
+                    <p class="skill-text">HTML: Building the structure of web pages.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="CSS.png" alt="CSS Logo" class="skill-logo">
+                    <p class="skill-text">CSS: Styling and layout of web pages.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="JAVA.png" alt="JavaScript Logo" class="skill-logo">
+                    <p class="skill-text">JavaScript: Adding interactivity to web pages.</p>
+                </div>
+            </div>
+        </section>
+        <section id="LL" style="display: none;">
+         <h2> Projects </h2>
+        <div class="project-item">
+            <img src="MANAGR.png" alt="Task Manager Logo"   class="moving-image">
+            <div class="project-info">
+                <h3 class="project-title">Application de Gestion de Tâches</h3>
+                <p class="project-description">
+                    Cette application permet aux utilisateurs de créer, organiser et suivre leurs tâches quotidiennes. Elle offre des fonctionnalités telles que des rappels, des listes de tâches personnalisables et une interface utilisateur intuitive.
+                </p>
+                <a href="https://www.freepik.com/premium-vector/schedule-app-task-manager-ui-template-with-project-timeline-time-optimization-task-management-web-app-dashboard-interface-vector-design_26839963.htm" class="project-link">Voir le projet </a>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="PO.png" alt="Personal Portfolio Logo" class="moving-image">
+            <div class="project-info">
+                <h3 class="project-title">Portfolio Personnel en Ligne</h3>
+                <p class="project-description">
+                    Un site Web interactif permettant aux utilisateurs de présenter leurs projets, compétences et expériences. Le portfolio est entièrement responsive et inclut une galerie de projets, des témoignages et une section de contact.
+                </p>
+                <a href="https://try.htmldemo.net/smarto/index.html " class="project-link">Voir le projet</a>
+            </div>
+        </div>
+        <div class="project-item" >
+            <img src="T.jpg" alt="Ticket Booking Logo" class="moving-image">
+            <div class="project-info">
+                <h3 class="project-title">Système de Réservation de Billets</h3>
+                <p class="project-description">
+                    Un système de réservation en ligne pour des événements tels que des concerts, des films et des conférences. Les utilisateurs peuvent rechercher des événements, réserver des billets et recevoir des confirmations par e-mail.
+                </p>
+                <a href="https://www.roadcalls.fr/comment-reserver-un-billet-d-avion/" class="project-link">Voir le projet</a>
+            </div>
+        </div>
+    </section>
+    <section id="HH" style="display: none;">
+        <h2> Recommendation </h2>
+    <h3 >Établir un Plan d'Apprentissage Structuré</h2>
+        <p st>
+            Identifiez les compétences spécifiques que vous souhaitez développer et établissez des objectifs réalisables à court, moyen et long terme.
+        </p>
+        <h3> Pratiquer Régulièrement et Rechercher des Retours</h2>
+        <p>
+            Appliquez ce que vous apprenez à travers des projets réels ou des exercices pratiques. La pratique régulière renforce l'apprentissage et améliore les compétences.
+        </p>
+        <h3> Continuer à Se Former et à S'adapter</h2>
+        <p>
+            Participez à des cours en ligne, des ateliers ou des conférences pour rester à jour avec les nouvelles tendances et technologies.
+        </p>
+        <br><br>
+        <a href="portfolio.html#contact" ></a>
+            <h2>Submit Your Recommendation</h2>
+            <form id="recommendation-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required >
+                <br>
+                <label for="recommendation">Recommendation:</label>
+                <textarea id="recommendation" name="recommendation" rows="1" required></textarea>
+                <br>
+                <button type="submit">Submit Recommendation</button>
+            </form>
+        </section>
+    
+        <script>
+            document.getElementById('recommendation-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Empêche la soumission par défaut du formulaire
+                const confirmed = confirm('Are you sure you want to submit your recommendation?');
+    
+                if (confirmed) {
+                    alert('Thank you for your recommendation!');
+                }
+            });
+        </script>
+        
+    </body>
+    </html>
